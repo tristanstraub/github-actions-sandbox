@@ -1,2 +1,6 @@
 #! /usr/bin/env bash
-clojure -A:test
+if [ -z "$@" ]; then
+    clojure -A:test
+else
+    $@
+fi
