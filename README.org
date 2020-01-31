@@ -13,3 +13,8 @@ The workflow and action can be found under the .github directory:
 └── workflows
     └── test.yml
 #+END_SRC
+
+* Testing locally
+
+Under .github/actions/test, the Makefile tests the docker container locally.
+Run "make" from within that directory.
