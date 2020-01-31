@@ -1,0 +1,15 @@
+This project demonstrates github actions, specifically for running clojure test runners.
+
+The workflow and action can be found under the .github directory:
+
+#+BEGIN_SRC
+.github
+├── actions
+│   └── test
+│       ├── action.yml
+│       ├── Dockerfile
+│       ├── entrypoint.sh
+│       └── Makefile
+└── workflows
+    └── test.ym
+#+END_SRC
