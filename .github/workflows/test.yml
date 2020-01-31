@@ -1,4 +1,4 @@
-name: Test action
+name: On-push workflow
 
 on: [push]
 
@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: populates /github/workspace inside the docker container
         uses: actions/checkout@v2
-      - name: Checkout code
+
+      - name: uses the action.yml and Dockerfile found under .github/actions/test
         uses: ./.github/actions/test
