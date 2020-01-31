@@ -1,12 +1,12 @@
 #! /usr/bin/env bash
-set -euxo pipefail
+set -Euxo pipefail
 
 pwd
-ls -R /github/workspace
-ls -R /github/home
-ls -R /github/workflow
 
-cat /github/workflow/event.json
+[ -e /github/workspace ] && ls -R /github/workspace;
+[ -e /github/home ] && ls -R /github/home
+[ -e /github/workflow ] && ls -R /github/workflow
+[ -e /github/workflow/event.json ] && cat /github/workflow/event.json;
 
 if [ -z "$@" ]; then
     clojure -A:test

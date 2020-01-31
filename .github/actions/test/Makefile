@@ -1,3 +1,7 @@
+# This makefile can be used to test the github action before pushing it to github
+
+all: run
+
 .PHONY: container
 container:
 	docker build -t github-actions-sandbox .
@@ -14,6 +18,6 @@ run: container
 		-e GITHUB_EVENT_PATH -e RUNNER_OS -e RUNNER_TOOL_CACHE -e RUNNER_TEMP \
 		-e RUNNER_WORKSPACE -e ACTIONS_RUNTIME_URL -e ACTIONS_RUNTIME_TOKEN \
 		-e GITHUB_ACTIONS=true \
-		-v "$(PWD):/github/workspace" \
+		-v "$(PWD)/../../..:/github/workspace" \
 		-v "$(HOME)/.m2:/root/.m2" \
 		github-actions-sandbox
