@@ -1,2 +1,2 @@
 #! /usr/bin/env bash
-clj -A:test
+clojure -A:test
