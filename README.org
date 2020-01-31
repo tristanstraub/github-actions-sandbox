@@ -11,5 +11,5 @@ The workflow and action can be found under the .github directory:
 │       ├── entrypoint.sh
 │       └── Makefile
 └── workflows
-    └── test.ym
+    └── test.yml
 #+END_SRC
