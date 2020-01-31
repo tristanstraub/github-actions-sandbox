@@ -2,4 +2,4 @@ name: 'clojure tests'
 description: 'Run tests'
 runs:
   using: 'docker'
-  image: 'github-actions/test/Dockerfile'
+  image: 'Dockerfile'
