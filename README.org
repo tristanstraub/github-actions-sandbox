@@ -18,3 +18,7 @@ The workflow and action can be found under the .github directory:
 
 Under .github/actions/test, the Makefile tests the docker container locally.
 Run "make" from within that directory.
+
+* Test naming
+
+test namespaces must end in "-test". This was needed for cognitect and kaocha test runners.

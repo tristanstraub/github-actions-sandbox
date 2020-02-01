@@ -1,4 +1,4 @@
-(ns sandbox.tests
+(ns sandbox.sandbox-test
   (:require [clojure.test :refer [deftest is]]))
 
 (deftest dummy-failing-test
